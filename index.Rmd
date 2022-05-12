@@ -42,30 +42,108 @@ library(units)
 
 # Biodiversity changes are scale dependent
 
-* Global biodiversity is declining
+* **Global** biodiversity is **declining**
 
-* Local, regional or national trends are not always similar
+--
+
+* **Local, regional or national** trends are **not always** similar
+
+```{r, out.height = '430px'}
+knitr::include_graphics("images/litrev.jpg")
+```
+
+---
+
+# Biodiversity changes are scale dependent
+
+* **Global** biodiversity is **declining**
+
+* **Local, regional or national** trends are **not always** similar
+
+<br><br><br><br>
+
+.center[
+### $\Rightarrow$ Dynamic processes (*i.e.* colonization, extinction, turnover...) vary with spatial scales
+]
+
+---
+
+class: inverse, center, middle
+
+## Biodiversity trends have to be assessed across spatial (and temporal) scales
+
+
+---
+
+# Scales
+
+
+* **Spatial grain** 
+<br><br><br>
+.center[
+```{r}
+knitr::include_graphics("images/spatialgrain.jpg")
+```
+]
 
 
 
 ---
-<!-- class: inverse, center, middle -->
 
-<!-- Focus on -->
+# Scales
 
-<!-- ## Species Richness -->
 
-<!-- --- -->
+* **Temporal grain**
+<br><br><br>
+.center[
 
-<!-- class: inverse, center, middle -->
+```{r, out.width="80%"}
+knitr::include_graphics("images/temporalgrain.jpg")
+```
+]
 
-<!-- ## Species Richness -->
-<!-- is an extensive variable -->
+---
 
-<!-- = -->
+# Biodiversity data
 
-<!-- proportional to spatial and temporal scales -->
-<!-- --- -->
+* One dataset express the biodiversity at its specific spatial grain
+
+* Heterogeneity in spatial and temporal grains and extent
+
+* Lack of data
+
+<br><br>
+## Problem: 
+
+With the actual data, it is impossible to assess biodiversity trends for a continuum of spatial scales.
+
+---
+
+# Spatial aggregation
+
+**Jarzyna *et al* (2015)** <img align="right" src="images/jarzyna2015.jpg" width="75%"/>
+
+
+
+<br><br><br><br><br><br><br>
+**Chase *et al.* (2019)**
+
+.center[
+
+```{r, out.width="40%"}
+knitr::include_graphics("images/chase_2019.PNG")
+```
+
+]
+
+---
+
+# Model
+
+
+
+
+---
 
 # Species richness and spatial scale : the SAR
 
