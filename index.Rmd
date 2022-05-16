@@ -70,7 +70,7 @@ knitr::include_graphics("images/litrev.jpg")
 
 class: inverse, center, middle
 
-## Biodiversity trends have to be assessed across spatial (and temporal) scales
+## Biodiversity trends have to be assessed across spatial scales
 
 
 ---
@@ -106,9 +106,9 @@ knitr::include_graphics("images/temporalgrain.jpg")
 
 # Biodiversity data
 
-* One dataset express the biodiversity at its specific spatial grain
+* One dataset express the biodiversity at its specific spatial and temporal grains
 
-* Heterogeneity in spatial and temporal grains and extent
+* Data heterogeneity in spatial and temporal grains and extent
 
 * Lack of data
 
@@ -140,8 +140,33 @@ knitr::include_graphics("images/chase_2019.PNG")
 
 # Model
 
+.pull-left[
 
+* Use biodiversity data with heterogeneous: **spatial grain, temporal grain, location, spatial extent and temporal extent**.
 
+* Use this component as **covariates** to predict species richness
+
+* Tree based models: flexibility models the interactions between *species area relationship* and their location in space and time. 
+
+]
+
+.pull-right[
+```{r}
+knitr::include_graphics("images/keil_chase_2022.PNG")
+```
+.credit[Keil & Chase 2022, preprint]
+]
+
+--
+
+**In practice:**
+```
+treeBasedModel(species richness ~ area,
+                                  latitude,
+                                  longitude,
+                                  date,
+                                  temporal grain)
+```
 
 ---
 
@@ -294,7 +319,7 @@ class: inverse, center, middle
 Use heterogeneous avian biodiversity datasets to model species richness trends across continuums of space and time scales
 
 .center[
-```{r, out.width="50%"}
+```{r}
 knitr::include_graphics("images/star.png")
 ```
 ]
