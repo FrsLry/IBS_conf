@@ -143,7 +143,7 @@ tr:nth-child(even) { background: #eee }
 /* H1 fonts */
 .title-slide h1 {
   color: #0D395F; /* Middlebury blue */
-  padding-top: 250px;
+  padding-top: 200px;
   font-weight: normal;
   font-size: 45px;
   text-align: left;
