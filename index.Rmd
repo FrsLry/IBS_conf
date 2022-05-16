@@ -502,6 +502,6 @@ knitr::include_graphics("images/srtrend_details.jpg")
 
 # Colonization, extinction, persistence across scales
 
-* Species richness change is the sum of this 3 processes
+* Species richness change is the sum of these 3 processes
 
 
