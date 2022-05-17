@@ -482,7 +482,7 @@ knitr::include_graphics("images/spatialgrain.jpg")
 # Richness changes across scales
 
 .center[
-```{r, out.width="85%"}
+```{r, out.width="90%"}
 knitr::include_graphics("images/srtrend.jpg")
 ```
 ]
@@ -504,4 +504,92 @@ knitr::include_graphics("images/srtrend_details.jpg")
 
 * Species richness change is the sum of these 3 processes
 
+* Assessment across scales
+
+---
+
+# Colonization, extinction, persistence across scales
+
+.center[
+## Extinction
+
+```{r, out.width="75%"}
+knitr::include_graphics("images/extinction_concept.JPG")
+```
+
+.credit[modified from Keil et al. (2017)]
+
+]
+
+---
+
+# Colonization, extinction, persistence across scales
+
+.center[
+## Colonization
+```{r, out.width="68%"}
+knitr::include_graphics("images/colonization_concept.JPG")
+```
+
+.credit[modified from Keil et al. (2017)]
+
+]
+
+---
+
+# Colonization, extinction, persistence across scales
+
+.center[
+```{r, out.width="150%"}
+knitr::include_graphics("images/CEP.JPG")
+```
+]
+
+---
+
+# Beta-diversity across scales
+
+.pull-left[
+
+**Similarity index:**
+
+$jaccard = \frac{pers}{pers+col+ext}$
+
+<br><br>
+
+```{r, out.width="100%"}
+knitr::include_graphics("images/jaccard.JPG")
+```
+
+]
+
+--
+
+.pull-right[
+
+**Dissimilarity index**
+
+$betasim = 1 - \frac{min(ext,col)}{pers + min(ext,col)}$
+
+<br><br>
+
+```{r}
+knitr::include_graphics("images/betasim.JPG")
+```
+
+
+]
+
+---
+
+# Conclusion
+
+This pattern: 
+
+.center[
+
+```{r, out.width="25%"}
+knitr::include_graphics("images/")
+```
+]
 
