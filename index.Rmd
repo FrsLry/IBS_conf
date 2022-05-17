@@ -482,7 +482,7 @@ knitr::include_graphics("images/spatialgrain.jpg")
 # Richness changes across scales
 
 .center[
-```{r, out.width="90%"}
+```{r, out.width="85%"}
 knitr::include_graphics("images/srtrend.jpg")
 ```
 ]
@@ -569,7 +569,7 @@ knitr::include_graphics("images/jaccard.JPG")
 
 **Dissimilarity index**
 
-$betasim = 1 - \frac{min(ext,col)}{pers + min(ext,col)}$
+$betasim = \frac{min(ext,col)}{pers + min(ext,col)}$
 
 <br><br>
 
@@ -588,8 +588,38 @@ This pattern:
 
 .center[
 
-```{r, out.width="25%"}
-knitr::include_graphics("images/")
+```{r, out.width="75%"}
+knitr::include_graphics("images/srtrend-copy.jpg")
 ```
+]
+
+Can be explained by the spatial scaling of dynamic processes:
+
+* $\nearrow$ **persistence** with increasing spatial grain
+* different $\searrow$ slope of **extinction** and **colonization** with increasing spatial grain
+* $\searrow$ temporal turnover with increasing spatial grain
+
+---
+
+# Conclusion
+
+.center[
+### $\Rightarrow$ As colonization, extinction and persistence are scale dependent, we observe a scale dependency of biodiversity change
+]
+
+--
+
+<br><br>
+
+.center[
+### $\Rightarrow$ Assessing biodiversity trends at national scale doesn't inform much about local dynamic and vice-versa
+]
+
+--
+
+<br><br>
+
+.center[
+###  $\Rightarrow$ Using heterogeneous dataset allows to model biodiversity at location and time where data is missing
 ]
 
