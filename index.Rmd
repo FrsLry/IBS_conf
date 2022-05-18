@@ -195,10 +195,25 @@ The species-area and species-time relationships allows to down/upscale species r
 
 ---
 
-# Atlas dataset
-
+# Bird atlas of Czech Republic
 
 .pull-left[
+
+.center[**Spatial scales**]
+
+Large scale dataset. Ranging from less than **100 Km** $^2$ to **80 000 Km** $^2$ (the entire Czech Republic)
+
+```{r}
+knitr::include_graphics("images/spatialgrain_atlas.jpg")
+```
+
+]
+
+.footnote[
+Courtesy of Vladimír Bejček, Karel Šťastný and Ivan Mikuláš
+]
+
+.pull-right[
 
 .center[**Temporal scales**]
 
@@ -209,20 +224,10 @@ The species-area and species-time relationships allows to down/upscale species r
 * M3 = 2001-2003 (**3 years**)
 
 * M4 = 2014-2017 (**4 years**)
-]
-
-.pull-right[
-
-.center[**Spatial scales**]
-
-Large scale dataset. Ranging from less than **100 Km** $^2$ to **80 000 Km** $^2$ (the entire Czech Republic)
-
-```{r}
-knitr::include_graphics("images/spatialgrain_atlas.jpg")
-```
-
 
 ]
+
+
 
 --
 
@@ -233,7 +238,7 @@ knitr::include_graphics("images/spatialgrain_atlas.jpg")
 
 ---
 
-# Breeding bird survey (BBS) dataset
+# Breeding bird survey (BBS)
 
 
 ```{r}
@@ -391,6 +396,8 @@ for (i in unique(Points$Transect)) {
 m %>% setView(lat = 50, lng = 15.5, zoom=7.49) %>% hideGroup(c("Points","Transect area"))
 ```
 
+
+
 ---
 
 # Breeding bird survey (BBS) dataset
@@ -406,6 +413,7 @@ m %>% setView(lat = 50, lng = 15.5, zoom=7.49) %>% hideGroup(c("Points","Transec
 ### $\Rightarrow$ The model predict species richness for missing years
 ]
 
+.footnote[Courtesy of Jiří Reif]
 
 ]
 
