@@ -183,9 +183,11 @@ treeBasedModel(species richness ~ area,           -> Species-area relationship
 <br>
 Tree based models: the flexibility grasps the interactions between **species area/time relationship** and their location in space and time. 
 
+The species-area and species-time relationships allows to down/upscale species richness
+
 --
 
-<br><br>
+<br>
 .center[
 ### $\Rightarrow$ We need data at different spatial and temporal grains
 ]
@@ -621,5 +623,19 @@ Can be explained by the spatial scaling of dynamic processes:
 
 .center[
 ###  $\Rightarrow$ Using heterogeneous dataset allows to model biodiversity at location and time where data is missing
+]
+
+---
+
+
+class: inverse, center, middle
+
+# Thank you for your attention
+
+
+.footnote[
+Email: leroy@fzp.czu.cz
+
+Twitter: @FrsLry
 ]
 
