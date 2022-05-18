@@ -551,7 +551,12 @@ knitr::include_graphics("images/CEP.JPG")
 
 # Colonization, extinction, persistence across scales
 
+.center[
+```{r, out.width="70%"}
+knitr::include_graphics("images/CEP_sr.jpg")
+```
 
+]
 
 ---
 
