@@ -627,6 +627,17 @@ Can be explained by the spatial scaling of dynamic processes:
 
 ---
 
+# And what about temporal scaling?
+
+.center[
+```{r}
+knitr::include_graphics("images/temporal_scaling.jpg")
+```
+
+]
+
+
+---
 
 class: inverse, center, middle
 
