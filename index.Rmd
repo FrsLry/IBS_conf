@@ -549,6 +549,12 @@ knitr::include_graphics("images/CEP.JPG")
 
 ---
 
+# Colonization, extinction, persistence across scales
+
+
+
+---
+
 # Beta-diversity across scales
 
 .pull-left[
@@ -630,7 +636,7 @@ Can be explained by the spatial scaling of dynamic processes:
 # And what about temporal scaling?
 
 .center[
-```{r}
+```{r, out.width="85%"}
 knitr::include_graphics("images/temporal_scaling.jpg")
 ```
 
