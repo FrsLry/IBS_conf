@@ -66,12 +66,11 @@ knitr::include_graphics("images/litrev.jpg")
 ### $\Rightarrow$ Dynamic processes (*i.e.* colonization, extinction, turnover...) vary with spatial scales
 ]
 
----
+--
 
-class: inverse, center, middle
-
-## Biodiversity trends have to be assessed across spatial (and temporal) scales
-
+.center[
+### $\Rightarrow$ Biodiversity trends have to be assessed across spatial (and temporal) scales
+]
 
 ---
 
@@ -552,7 +551,7 @@ knitr::include_graphics("images/CEP.JPG")
 # Colonization, extinction, persistence across scales
 
 .center[
-```{r, out.width="70%"}
+```{r, out.width="68%"}
 knitr::include_graphics("images/CEP_sr.jpg")
 ```
 
