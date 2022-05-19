@@ -60,25 +60,25 @@ knitr::include_graphics("images/litrev.jpg")
 
 * **Local, regional or national** trends are **not always** similar
 
-<br><br><br><br>
+<br><br><br>
 
 .center[
 ### $\Rightarrow$ Dynamic processes (*i.e.* colonization, extinction, turnover...) vary with spatial scales
 ]
 
----
+--
 
-class: inverse, center, middle
-
-## Biodiversity trends have to be assessed across spatial (and temporal) scales
-
+<br>
+.center[
+### $\Rightarrow$ Biodiversity trends have to be assessed across spatial (and temporal) scales
+]
 
 ---
 
 # Scales
 
 
-* **Spatial grain** 
+* **Spatial scale** $=$ **Spatial grain**   
 <br><br><br>
 .center[
 ```{r}
@@ -93,7 +93,7 @@ knitr::include_graphics("images/spatialgrain.jpg")
 # Scales
 
 
-* **Temporal grain**
+* **Temporal scale** $=$ **Temporal grain**
 <br><br><br>
 .center[
 
