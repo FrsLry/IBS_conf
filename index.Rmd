@@ -38,6 +38,10 @@ library(rgeos)
 library(sf)
 library(lwgeom)
 library(units)
+library(icons)
+
+## to build the pdf
+# build_pdf("index.html", complex_slides = T)
 ```
 
 # Biodiversity changes are scale dependent
@@ -70,9 +74,20 @@ knitr::include_graphics("images/litrev.jpg")
 
 <br>
 .center[
-### $\Rightarrow$ Biodiversity trends have to be assessed across spatial (and temporal) scales
+### $\Rightarrow$ Biodiversity trends have to be assessed across spatial scales
 ]
 
+---
+
+class: inverse, center, middle
+
+# Objectives
+
+<br><br>
+### $\Rightarrow$ How are avian biodiversity changes scale dependent across Czechia?
+
+<br><br>
+### $\Rightarrow$ Why do we observe this scale dependency of biodiversity changes?
 ---
 
 # Scales
@@ -85,8 +100,6 @@ knitr::include_graphics("images/litrev.jpg")
 knitr::include_graphics("images/spatialgrain.jpg")
 ```
 ]
-
-
 
 ---
 
@@ -123,16 +136,21 @@ With the actual data, it is not straight forward to assess biodiversity trends f
 
 # Spatial aggregation
 
-**Jarzyna *et al* (2015)** <img align="right" src="images/jarzyna2015.jpg" width="75%"/>
+**Jarzyna *et al.* (2015)**
+<br><br><br>
+```{r, out.height="150%"}
+knitr::include_graphics("images/jarzyna2015.jpg")
+```
 
+---
 
+# Spatial aggregation
 
-<br><br><br><br><br><br><br>
 **Chase *et al.* (2019)**
 
 .center[
 
-```{r, out.width="40%"}
+```{r, out.width="75%"}
 knitr::include_graphics("images/chase_2019.PNG")
 ```
 
@@ -426,53 +444,6 @@ m %>% setView(lat = 50.23, lng = 15.65, zoom=12.5) %>%
 ```
 ]
 
-
----
-
-# Performance
-
-.pull-left[
-**Atlas model**
-
-$XGBoost$
-
-$R^2 = 0.77$
-
-$MAE = 9$
-
-<!-- ``` -->
-<!-- species richness ~ area,            -->
-<!--                    temporal grain,  -->
-<!--                    latitude,        -->
-<!--                    longitude,       -->
-<!--                    date, -->
-<!--                    sampling effort, -->
-<!--                    shape, -->
-<!--                    elevation) -->
-
-<!-- ``` -->
-
-```{r, out.width="90%"}
-knitr::include_graphics("images/obsvspred_atlas.JPG")
-```
-
-]
-
-.pull-right[
-**BBS model**
-
-$Random Forest$
-
-$R^2 = 0.74$
-
-$MAE = 10$
-
-```{r, out.width="90%"}
-knitr::include_graphics("images/obsvspred_bbs.JPG")
-```
-
-]
-
 ---
 
 # Richness change across scales
@@ -644,17 +615,6 @@ Can be explained by the spatial scaling of dynamic processes:
 ###  $\Rightarrow$ Using heterogeneous dataset allows to model biodiversity at location and time where data is missing
 ]
 
----
-
-# And what about temporal scaling?
-
-.center[
-```{r, out.width="85%"}
-knitr::include_graphics("images/temporal_scaling.jpg")
-```
-
-]
-
 
 ---
 
@@ -671,3 +631,66 @@ class: inverse, center, middle
 `r icons::icon_style(icons::fontawesome$brands$github, scale = 2, fill = "white")` @FrsLry
 
 `r icons::icon_style(icons::fontawesome$solid$"mouse-pointer", scale = 1, fill = "white")` https://frslry.github.io/
+
+---
+
+class: inverse, center, middle
+
+# Supplementary slides
+
+
+---
+
+# Performance
+
+.pull-left[
+**Atlas model**
+
+$XGBoost$
+
+$R^2 = 0.77$
+
+$MAE = 9$
+
+<!-- ``` -->
+<!-- species richness ~ area,            -->
+<!--                    temporal grain,  -->
+<!--                    latitude,        -->
+<!--                    longitude,       -->
+<!--                    date, -->
+<!--                    sampling effort, -->
+<!--                    shape, -->
+<!--                    elevation) -->
+
+<!-- ``` -->
+
+```{r, out.width="90%"}
+knitr::include_graphics("images/obsvspred_atlas.JPG")
+```
+
+]
+
+.pull-right[
+**BBS model**
+
+$Random Forest$
+
+$R^2 = 0.74$
+
+$MAE = 10$
+
+```{r, out.width="90%"}
+knitr::include_graphics("images/obsvspred_bbs.JPG")
+```
+
+]
+
+---
+
+# And what about temporal scaling?
+
+.center[
+```{r, out.width="85%"}
+knitr::include_graphics("images/temporal_scaling.jpg")
+```
+]
