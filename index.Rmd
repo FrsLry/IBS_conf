@@ -663,9 +663,11 @@ class: inverse, center, middle
 # Thank you for your attention
 
 
-.footnote[
-Email: leroy@fzp.czu.cz
+<br><br><br>
+`r icons::icon_style(icons::fontawesome$regular$envelope, scale = 1, fill = "white")` leroy@fzp.czu.cz
 
-Twitter: @FrsLry
-]
+`r icons::icon_style(icons::fontawesome$brands$twitter, scale = 2, fill = "lightblue")` @FrsLry
 
+`r icons::icon_style(icons::fontawesome$brands$github, scale = 2, fill = "white")` @FrsLry
+
+`r icons::icon_style(icons::fontawesome$solid$"mouse-pointer", scale = 1, fill = "white")` https://frslry.github.io/
