@@ -589,6 +589,46 @@ Can be explained by the spatial scaling of dynamic processes:
 
 ---
 
+class: top, center
+
+# Acknowledgment
+
+```{r}
+## Load observer list
+Volunteers_Atlas_M4 <- 
+  readxl::read_excel("../phd/data/czech_bird/ATLASCR_DATA/Volunteers_Atlas_M4.xlsx", 
+    col_types = c("numeric", "text", "text", 
+        "numeric", "date", "date"))
+
+## Create the list of observers
+observers <- Volunteers_Atlas_M4 %>%
+  unite("OBSERVER", c(Name, Surname), sep = " ") %>%
+  pull(OBSERVER) %>% unique()
+
+obs_1 <- observers[1:(length(observers)/2)]
+obs_2 <- observers[(length(observers)/2):length(observers)]
+
+oooobs <- tibble(obs = obs_1, obs_1 = obs_2[-189])
+```
+
+.pull-right[
+
+**The hundreds volunteers**
+
+```{r, echo=F}
+library(kableExtra)
+
+kableExtra::kbl(oooobs,
+                # list(observers[1:ceiling(length(observers)/2)], observers[ceiling((length(observers)/2)+1):length(observers)]), 
+                col.names = NULL) %>% 
+  # kableExtra::kable_paper() %>% 
+  kableExtra::scroll_box(width = "400px", height = "400px")
+```
+]
+
+
+---
+
 class: inverse, center, middle
 
 # Thank you for your attention
@@ -669,4 +709,3 @@ knitr::include_graphics("images/betasim.JPG")
 ```
 
 ]
-
