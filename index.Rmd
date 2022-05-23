@@ -41,7 +41,7 @@ library(units)
 library(icons)
 
 ## to build the pdf
-# build_pdf("index.html", complex_slides = T)
+# xaringanBuilder::build_pdf("index.html", complex_slides = T)
 ```
 
 # Biodiversity changes are scale dependent
@@ -478,15 +478,6 @@ knitr::include_graphics("images/srtrend_details.jpg")
 ```
 ]
 
-
----
-
-# Colonization, extinction, persistence across scales
-
-* Species richness change is the sum of these 3 processes
-
-* Assessment across scales
-
 ---
 
 # Colonization, extinction, persistence across scales
@@ -494,7 +485,7 @@ knitr::include_graphics("images/srtrend_details.jpg")
 .center[
 ## Extinction
 
-```{r, out.width="75%"}
+```{r, out.width="62%"}
 knitr::include_graphics("images/extinction_concept.JPG")
 ```
 
@@ -508,7 +499,7 @@ knitr::include_graphics("images/extinction_concept.JPG")
 
 .center[
 ## Colonization
-```{r, out.width="68%"}
+```{r, out.width="50%"}
 knitr::include_graphics("images/colonization_concept.JPG")
 ```
 
@@ -539,38 +530,18 @@ knitr::include_graphics("images/CEP_sr.jpg")
 
 ---
 
-# Beta-diversity across scales
+# Similarity across scales
 
-.pull-left[
+.center[
 
-**Similarity index:**
+$jaccard = \frac{persistence}{persistence+colonization+extinction}$
 
-$jaccard = \frac{pers}{pers+col+ext}$
-
-<br><br>
-
-```{r, out.width="100%"}
+```{r, out.width="75%"}
 knitr::include_graphics("images/jaccard.JPG")
 ```
 
 ]
 
---
-
-.pull-right[
-
-**Dissimilarity index**
-
-$betasim = \frac{min(ext,col)}{pers + min(ext,col)}$
-
-<br><br>
-
-```{r}
-knitr::include_graphics("images/betasim.JPG")
-```
-
-
-]
 
 ---
 
@@ -628,7 +599,7 @@ class: inverse, center, middle
 
 `r icons::icon_style(icons::fontawesome$brands$twitter, scale = 2, fill = "lightblue")` @FrsLry
 
-`r icons::icon_style(icons::fontawesome$brands$github, scale = 2, fill = "white")` @FrsLry
+`r icons::icon_style(icons::fontawesome$brands$github, scale = 2, fill = "white")` FrsLry
 
 `r icons::icon_style(icons::fontawesome$solid$"mouse-pointer", scale = 1, fill = "white")` https://frslry.github.io/
 
@@ -652,17 +623,6 @@ $R^2 = 0.77$
 
 $MAE = 9$
 
-<!-- ``` -->
-<!-- species richness ~ area,            -->
-<!--                    temporal grain,  -->
-<!--                    latitude,        -->
-<!--                    longitude,       -->
-<!--                    date, -->
-<!--                    sampling effort, -->
-<!--                    shape, -->
-<!--                    elevation) -->
-
-<!-- ``` -->
 
 ```{r, out.width="90%"}
 knitr::include_graphics("images/obsvspred_atlas.JPG")
@@ -694,3 +654,19 @@ knitr::include_graphics("images/obsvspred_bbs.JPG")
 knitr::include_graphics("images/temporal_scaling.jpg")
 ```
 ]
+
+---
+
+# Turnover across scales
+
+.center[
+
+$betasim = \frac{min(extinction,colonization)}{persistence + min(extinction,colonization)}$
+
+
+```{r, out.width="75%"}
+knitr::include_graphics("images/betasim.JPG")
+```
+
+]
+
