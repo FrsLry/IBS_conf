@@ -586,12 +586,35 @@ Can be explained by the spatial scaling of dynamic processes:
 ###  $\Rightarrow$ Using heterogeneous dataset allows to model biodiversity at location and time where data is missing
 ]
 
+---
+
+class: inverse, center, middle
+
+## So what has happened with bird biodiversity from the 80's through now in Czechia?
+<br><br>
+$\Rightarrow$ Even though we may not notice change at the spatial scale we experience everyday (*i.e.* local), species richness at Czechia's scale has increased
+
+<br>
+$\Rightarrow$ Increase of species richness at large scale isn't a sign of ecosystems well-being: it can be due to invasive alien species
+
+<br>
+$\Rightarrow$ Species richness is linked to high extinction debt
 
 ---
 
 class: top, center
 
-# Acknowledgment
+# Acknowledgments
+
+.pull-left[
+
+**Collaborators**
+
+```{r, out.width="80%"}
+knitr::include_graphics("images/acknowledgments.jpg")
+```
+
+]
 
 ```{r}
 ## Load observer list
