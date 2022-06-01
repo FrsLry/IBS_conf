@@ -41,7 +41,7 @@ library(units)
 library(icons)
 
 ## to build the pdf
-# xaringanBuilder::build_pdf("index.html", complex_slides = T)
+xaringanBuilder::build_pdf("index.html", partial_slides = T, complex_slides = T)
 ```
 
 # Biodiversity changes are scale dependent
@@ -138,9 +138,11 @@ With the actual data, it is not straight forward to assess biodiversity trends f
 
 **Jarzyna *et al.* (2015)**
 <br><br><br>
+.center[
 ```{r, out.height="150%"}
 knitr::include_graphics("images/jarzyna2015.jpg")
 ```
+]
 
 ---
 
