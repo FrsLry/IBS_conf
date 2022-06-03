@@ -585,8 +585,7 @@ Can be explained by the spatial scaling of dynamic processes:
 <br><br>
 
 .center[
-###  $\Rightarrow$ Using heterogeneous dataset allows to model biodiversity at location and time where data is missing
-]
+###  $\Rightarrow$ Is this scale dependance universal? Toward a species change-area-relationship?]
 
 ---
 
