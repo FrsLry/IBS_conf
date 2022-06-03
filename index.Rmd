@@ -41,7 +41,7 @@ library(units)
 library(icons)
 
 ## to build the pdf
-xaringanBuilder::build_pdf("index.html", partial_slides = T, complex_slides = T)
+# xaringanBuilder::build_pdf("index.html", partial_slides = T, complex_slides = T)
 ```
 
 # Biodiversity changes are scale dependent
@@ -215,7 +215,7 @@ The species-area and species-time relationships allows to down/upscale species r
 
 ---
 
-# Bird atlas of Czech Republic
+# Bird atlas of the Czech Republic
 
 .pull-left[
 
