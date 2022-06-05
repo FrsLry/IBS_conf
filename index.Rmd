@@ -44,52 +44,6 @@ library(icons)
 # xaringanBuilder::build_pdf("index.html", partial_slides = T, complex_slides = T)
 ```
 
-# Biodiversity changes are scale dependent
-
-* **Global** biodiversity is **declining**
-
---
-
-* **Local, regional or national** trends are **not always** similar
-
-```{r, out.height = '430px'}
-knitr::include_graphics("images/litrev.jpg")
-```
-
----
-
-# Biodiversity changes are scale dependent
-
-* **Global** biodiversity is **declining**
-
-* **Local, regional or national** trends are **not always** similar
-
-<br><br><br>
-
-.center[
-### $\Rightarrow$ Dynamic processes (*i.e.* colonization, extinction, turnover...) vary with spatial scales
-]
-
---
-
-<br>
-.center[
-### $\Rightarrow$ Biodiversity trends have to be assessed across spatial scales
-]
-
----
-
-class: inverse, center, middle
-
-# Objectives
-
-<br><br>
-### $\Rightarrow$ How are avian biodiversity changes scale dependent across Czechia?
-
-<br><br>
-### $\Rightarrow$ Why do we observe this scale dependency of biodiversity changes?
----
-
 # Scales
 
 
@@ -103,17 +57,49 @@ knitr::include_graphics("images/spatialgrain.jpg")
 
 ---
 
-# Scales
+# Biodiversity changes are scale dependent
+
+* **Global** biodiversity is **declining**
+
+--
+
+* **Local, regional or national** trends are **not always** similar
 
 
-* **Temporal scale** $=$ **Temporal grain**
-<br><br><br>
 .center[
 
-```{r, out.width="80%"}
-knitr::include_graphics("images/temporalgrain.jpg")
+```{r, out.width="66%"}
+knitr::include_graphics("images/chase_2019.PNG")
+```
+.credit[
+Chase et al. (2019)
+]
+]
+
+
+---
+
+# Colonization, extinction, turnover... are scale dependent
+
+**Jarzyna *et al.* (2015)**
+
+.center[
+```{r, out.height="150%"}
+knitr::include_graphics("images/jarzyna2015.jpg")
 ```
 ]
+
+---
+
+class: inverse, center, middle
+
+# Objectives
+
+<br><br>
+### $\Rightarrow$ How are avian biodiversity changes scale dependent across Czechia?
+
+<br><br>
+### $\Rightarrow$ Why do we observe this scale dependency of biodiversity changes?
 
 ---
 
@@ -131,87 +117,6 @@ knitr::include_graphics("images/temporalgrain.jpg")
 ## Problem: 
 
 With the actual data, it is not straight forward to assess biodiversity trends for a continuum of spatial scales
-
----
-
-# Spatial aggregation
-
-**Jarzyna *et al.* (2015)**
-<br><br><br>
-.center[
-```{r, out.height="150%"}
-knitr::include_graphics("images/jarzyna2015.jpg")
-```
-]
-
----
-
-# Spatial aggregation
-
-**Chase *et al.* (2019)**
-
-.center[
-
-```{r, out.width="75%"}
-knitr::include_graphics("images/chase_2019.PNG")
-```
-
-]
-
----
-
-# Model
-
-.pull-left[
-
-* Use biodiversity data with heterogeneous: **spatial grain, temporal grain, location, spatial extent and temporal extent**.
-
-<br><br>
-* Use this component as **covariates** to predict species richness at desired (spatial & temporal) grain and location (in space & time) 
-
-
-]
-
-.pull-right[
-```{r}
-knitr::include_graphics("images/keil_chase_title.PNG")
-```
-
-.center[
-```{r, out.width="75%"}
-knitr::include_graphics("images/keil_chase_2022.PNG")
-```
-]
-
-
-]
-
----
-
-# Model
-
-<br><br>
-**In practice:**
-
-```
-treeBasedModel(species richness ~ area,           -> Species-area relationship 
-                                  temporal grain, -> Species-time relationship
-                                  latitude,       -> Location in space
-                                  longitude,      -> Location in space
-                                  date)           -> Location in time
-```
-<br>
-Tree based models: the flexibility grasps the interactions between **species area/time relationship** and their location in space and time. 
-
-The species-area and species-time relationships allows to down/upscale species richness
-
---
-
-<br>
-.center[
-### $\Rightarrow$ We need data at different spatial and temporal grains
-]
-
 
 ---
 
@@ -253,7 +158,7 @@ Courtesy of Vladimír Bejček, Karel Šťastný and Ivan Mikuláš
 
 <br><br>
 .center[
-### $\Rightarrow$ The model homogenize the temporal grain and the sampling effort
+### $\Rightarrow$ Model to homogenize the temporal grain and the sampling effort
 ]
 
 ---
@@ -430,7 +335,7 @@ m %>% setView(lat = 50, lng = 15.5, zoom=7.49) %>% hideGroup(c("Points","Transec
 
 .center[
 <br><br>
-### $\Rightarrow$ The model predict species richness for missing years
+### $\Rightarrow$ Model to predict species richness for missing years
 ]
 
 .footnote[Courtesy of Jiří Reif]
@@ -445,6 +350,55 @@ m %>% setView(lat = 50.23, lng = 15.65, zoom=12.5) %>%
   hideGroup("Transect area")
 ```
 ]
+
+
+
+---
+
+# Model
+
+.pull-left[
+
+* Use biodiversity data with heterogeneous: **spatial grain, temporal grain, location in space and time**.
+
+<br><br>
+* Use this component as **covariates** to predict species richness at desired (spatial & temporal) grain and location (in space & time) 
+
+
+]
+
+.pull-right[
+```{r}
+knitr::include_graphics("images/keil_chase_title.PNG")
+```
+
+.center[
+```{r, out.width="75%"}
+knitr::include_graphics("images/keil_chase_2022.PNG")
+```
+]
+
+
+]
+
+---
+
+# Model
+
+<br><br>
+**In practice:**
+
+```
+treeBasedModel(species richness ~ area,           -> Species-area relationship 
+                                  temporal grain, -> Species-time relationship
+                                  latitude,       -> Location in space
+                                  longitude,      -> Location in space
+                                  date)           -> Location in time
+```
+<br>
+Tree based models: the flexibility grasps the interactions between **species area/time relationship** and their location in space and time. 
+
+The species-area and species-time relationships allows to down/upscale species richness
 
 ---
 
@@ -536,7 +490,7 @@ knitr::include_graphics("images/CEP_sr.jpg")
 
 .center[
 
-$jaccard = \frac{persistence}{persistence+colonization+extinction}$
+$temporal jaccard = \frac{persistence}{persistence+colonization+extinction}$
 
 ```{r, out.width="75%"}
 knitr::include_graphics("images/jaccard.JPG")
@@ -599,7 +553,7 @@ $\Rightarrow$ Even though we may not notice change at the spatial scale we exper
 $\Rightarrow$ Increase of species richness at large scale isn't a sign of ecosystems well-being: it can be due to invasive alien species
 
 <br>
-$\Rightarrow$ Species richness is linked to high extinction debt
+$\Rightarrow$ High extinction debt at high spatial scale?
 
 ---
 
@@ -669,12 +623,7 @@ class: inverse, center, middle
 
 ---
 
-class: inverse, center, middle
 
-# Supplementary slides
-
-
----
 
 # Performance
 
