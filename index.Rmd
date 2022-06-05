@@ -123,7 +123,7 @@ knitr::include_graphics("images/temporalgrain.jpg")
 
 * Data heterogeneity in spatial and temporal grains and extent
 
-* Lack of data
+* Lack of data in space and time
 
 --
 
